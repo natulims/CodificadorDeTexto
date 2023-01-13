@@ -1,4 +1,4 @@
-<h1> :computer: Primeiro Deesafio ONE - Decodificador de Texto </h1>
+<h1> :computer: Primeiro Deesafio ONE - Codificador de Texto </h1>
 <h2> Sobre o Projeto</h2>
 <p align="justify">O desafio consiste em criar uma página capaz de codificar e decodificar o texto digitado, as "chaves" utilizadas foram:</p>
 <ul>
