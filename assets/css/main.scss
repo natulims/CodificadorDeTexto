@@ -144,8 +144,8 @@ textarea {
     background-color: $button-color;
     width: 24.1rem;
     height: 18rem;
-    @media (min-width: 500px) {
-      width: 34rem;
+    @media (min-width: 300px) {
+      width: 23rem;
       height: 20rem;
       text-align: center;
     }
