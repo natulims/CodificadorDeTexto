@@ -150,6 +150,13 @@ textarea {
       text-align: center;
     }
 
+    @media (min-width: 300px) {
+      width: 34rem;
+      height: 20rem;
+      text-align: center;
+    }
+
+
     @media (min-width: 769px) {
       width: 42rem;
       height: 20rem;

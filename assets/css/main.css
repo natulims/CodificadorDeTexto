@@ -137,6 +137,13 @@ textarea {
     text-align: center;
   }
 }
+@media (min-width: 300px) {
+  .actions__right {
+    width: 34rem;
+    height: 20rem;
+    text-align: center;
+  }
+}
 @media (min-width: 769px) {
   .actions__right {
     width: 42rem;
