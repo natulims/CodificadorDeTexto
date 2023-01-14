@@ -1,0 +1,195 @@
+//color palette
+$background-color: #333652;
+$main-text-color: #f1e4c6;
+$details-color: #fad02c;
+$details-text-color: #131212;
+$button-color: #90adc6;
+$button-hover-color: #f07360;
+
+//fonts
+
+//functions
+@mixin text-config {
+  font-size: 0.2em;
+  line-height: normal;
+}
+/**/
+
+/*start - main css config*/
+body {
+  background-color: $background-color;
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  /*text selection*/
+  ::selection {
+    color: $details-color;
+  }
+}
+
+/*scrollbar*/
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var($background-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var($main-text-color);
+  border-radius: 50px;
+}
+
+textarea {
+  color: $background-color;
+  font-family: "Sofia Sans", sans-serif;
+  line-height: normal;
+}
+
+/*end - main css config*/
+
+/* start - header css*/
+.header {
+  &__text {
+    color: $main-text-color;
+    text-transform: capitalize;
+    font-size: 2.3em;
+    font-family: "Quicksand", sans-serif;
+
+    @media screen and (min-width: 860px) {
+      margin-right: 5rem;
+    }
+  }
+}
+
+/*end - header css*/
+
+/*start encode/decode area*/
+.actions {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+
+  &__textarea {
+    resize: none;
+    font-size: 1em;
+    height: 16rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0;
+    word-wrap: break-word;
+
+    @media screen and (min-width: 860px) {
+      margin-left: 35rem;
+    }
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    @media (min-width: 769px) {
+      width: 42rem;
+      height: 20rem;
+      text-align: center;
+    }
+  }
+
+  /*start encode/decode buttons css*/
+  &__left-btn {
+    margin-top: 2rem;
+    .encode-btn {
+      background-color: $button-color;
+      padding: 1rem;
+      width: 7rem;
+      border-radius: 1rem;
+      font-family: "Sofia Sans", sans-serif;
+      color: $main-text-color;
+      margin-right: 2rem;
+    }
+    .encode-btn:hover {
+      background-color: $main-text-color;
+      color: $button-color;
+    }
+    @media (min-width: 769px) {
+      padding-left: 48rem;
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    .decode-btn {
+      border: 2px solid $button-color;
+      padding: 1rem;
+      width: 7rem;
+      border-radius: 1rem;
+      margin-right: 30px;
+      font-family: "Sofia Sans", sans-serif;
+      color: $details-color;
+    }
+
+    .decode-btn:hover {
+      border: 2px solid $details-color;
+      color: $button-color;
+    }
+  }
+  /*end encode/decode buttons css*/
+
+  /*start right side of the container*/
+  &__right {
+    border-radius: 1rem;
+    margin-top: 2rem;
+    background-color: $button-color;
+    width: 24.1rem;
+    height: 18rem;
+    @media (min-width: 500px) {
+      width: 34rem;
+      height: 20rem;
+      text-align: center;
+    }
+
+    @media (min-width: 769px) {
+      width: 42rem;
+      height: 20rem;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 860px) {
+      margin-left: 35rem;
+    }
+  }
+
+  &__text {
+    padding: 1rem;
+    color: $details-text-color;
+    font-family: "Quicksand", sans-serif;
+    line-height: normal;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+  /*end right side of the container*/
+}
+/*end encode/decode area*/
+
+/*start footer area*/
+.footer {
+  font-size: 1.2em;
+  font-family: "Quicksand", sans-serif;
+  color: $button-color;
+  line-height: normal;
+
+  &__links {
+    font-size: 2.5rem;
+
+    a {
+      color: $main-text-color;
+
+      :hover {
+        color: $details-color;
+      }
+    }
+  }
+}
+/*end footer area*/
