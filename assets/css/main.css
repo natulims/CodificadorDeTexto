@@ -139,7 +139,7 @@ textarea {
 }
 @media (min-width: 300px) {
   .actions__right {
-    width: 34rem;
+    width: 379px;
     height: 20rem;
     text-align: center;
   }
