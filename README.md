@@ -9,7 +9,7 @@
   <li>u = ufat</li>
 </ul>
 
-<p align="center">Você pode acessar o projeto através desse <a href="#">link</a>, clicando no link da descrição do projeto ou baixando o mesmo!</p>
+<p align="center">Você pode acessar o projeto através desse <a href="https://natulims.github.io/CodificadorDeTexto/">link</a>, clicando no link da descrição do projeto ou baixando o mesmo!</p>
 
 <h2>Extras</h2>
 <p align="justify">Foi utilizado Tailwind e SASS para melhor estilização da página e pensando na responsividade do projeto.</p>
